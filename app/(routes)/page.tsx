@@ -22,13 +22,35 @@ export default function Home() {
         </p>
       </div>
       <div className="w-3/4 p-4">
-        <Accordion type="single" collapsible>
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Dr. Gabriel Jabour</AccordionTrigger>
-            <AccordionContent>
-              Cara fera
-            </AccordionContent>
-          </AccordionItem>
+        <Accordion type="single" collapsible className="grid grid-cols-2 gap-4">
+          <div>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Dr. Gabriel Jabour</AccordionTrigger>
+              <AccordionContent>
+                Cara fera
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Dr. Harvey Specter</AccordionTrigger>
+              <AccordionContent>
+                Melhor advogado de Manhatann
+              </AccordionContent>
+            </AccordionItem>
+          </div>
+          <div>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Dr. Pablo Jabour</AccordionTrigger>
+              <AccordionContent>
+                Outro Cara fera
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>Dr. Mike Ross</AccordionTrigger>
+              <AccordionContent>
+                Provavelmente sem diploma
+              </AccordionContent>
+            </AccordionItem>
+          </div>
         </Accordion>
       </div>
     </main>
